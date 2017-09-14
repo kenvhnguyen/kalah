@@ -1,0 +1,13 @@
+<div class="col-md-6">
+    <div class="tableContainer">
+        <div class="gametable">
+            <div ng-repeat="row in rows" class="tablerow">
+                <div id="{{column.id}}" class="{{column.class}}" ng-repeat="column in row">
+                    <div ng-click="playerMove(column)" class="boxContent{{column.content}}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
